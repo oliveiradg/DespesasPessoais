@@ -38,13 +38,13 @@ class MyHomePage extends StatelessWidget {
                       child: Card(
                         color: Colors.blue,
                           elevation: 5,
-                          child:Text('Gráfico'),
+                          child:Text('Gráfico'), a
                       ),
                     ),
                     Card(
                         elevation: 5,
                         child: Text('Lista de Transações'),
-                    ),
+                    ),m
                 ],
            ),
        );
