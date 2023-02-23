@@ -46,8 +46,8 @@ class MyHomePage extends StatelessWidget {
         title: const Text('Despesas Pessoais'),
       ),
       body: Column(
-        children: const [
-          SizedBox(
+        children:  [
+          const SizedBox(
             width: double.infinity,
             child: Card(
               color: Colors.blue,
@@ -55,10 +55,15 @@ class MyHomePage extends StatelessWidget {
               child: Text('Gráfico'),
             ),
           ),
-          Card(
-            elevation: 5,
-            child: Text('Lista de Transações'),
-          ),
+       Column(
+        children: _transacao.map((tr){
+          return const Card(
+            child: Text('tr.title'),
+          );
+
+        }).toList(),
+
+       )
         ],
       ),
     );
